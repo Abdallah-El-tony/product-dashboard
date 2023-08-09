@@ -1,0 +1,23 @@
+.error {
+display:block !important;
+}
+.field {
+    position:relative;
+}
+.warning {
+    display:none;
+    position:relative;
+    background-color:#de6666;
+    border-radius: 0 0 5px 5px;
+    color:#fff;
+    padding:10px 5px;
+    z-index:99;
+    width:100%;
+}
+.warning::before {
+    content:'';
+    border:15px solid;
+    top:-28px;
+    position:absolute;
+    border-color:transparent transparent #de6666 transparent;
+}
